@@ -17,6 +17,13 @@
 
 <body>
     <h1>Welcome to gitPub</h1>
+    <ul>
+        <% allDrinks.forEach(function(element,index) { %>
+            <li>
+                <%= element.name[0].toUpperCase() + element.name.slice(1) %>
+            </li>
+            <% }); %>
+    </ul>
 </body>
 
 </html>
