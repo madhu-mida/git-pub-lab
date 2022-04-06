@@ -15,6 +15,10 @@ app.get("/drinks", (req, res) => {
     res.render("drinks_index.ejs", { allDrinks: drinks })
 })
 
+app.get("/drinks/:id", (req, res) => {
+    res.send(drinks[req.params.id])
+})
+
 app.listen(PORT, () => {
     console.log(`You are listening to PORT ${PORT}`)
 })
