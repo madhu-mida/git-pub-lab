@@ -20,7 +20,9 @@
     <ul>
         <% allDrinks.forEach(function(element,index) { %>
             <li>
-                <%= element.name[0].toUpperCase() + element.name.slice(1) %>
+                <a href="/drinks/<%=index%>">
+                    <%= element.name[0].toUpperCase() + element.name.slice(1) %>
+                </a>
             </li>
             <% }); %>
     </ul>
