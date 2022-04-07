@@ -7,6 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style type="text/css">
+    body {
+        color: blanchedalmond;
+        background-color: black;
+
+    }
+
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        padding: auto;
+        color: red;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 80px;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    a {
+        margin-top: 100px;
+        color: white;
+    }
+
+    .main-page {
+        text-align: center;
+    }
+</style>
 
 <body>
     <h1>At foo Bar</h1>
@@ -17,7 +55,9 @@
     <h3>
         Price: <%= drink.price %>
     </h3>
-    <a href="/drinks">Back to Main Page</a>
+    <div class="main-page">
+        <a href="/drinks">Back to Main Page</a>
+    </div>
 </body>
 
 </html>

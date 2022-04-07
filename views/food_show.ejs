@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <style type="text/css">
     body {
         color: blanchedalmond;
         background-color: black;
+
     }
 
     h1 {
@@ -20,34 +20,44 @@
         padding: auto;
         color: red;
         font-family: 'Times New Roman', Times, serif;
+        font-size: 80px;
     }
 
-    ul {
-        text-align: center;
-        list-style-type: none;
-    }
-
-    li {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
         margin-top: 30px;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
     }
 
     a {
         margin-top: 100px;
         color: white;
     }
+
+    .main-page {
+        text-align: center;
+    }
 </style>
 
 <body>
-    <h1>Welcome to gitPub</h1>
-    <ul>
-        <% allDrinks.forEach(function(element,index) { %>
-            <li>
-                <a href="/drinks/<%=index%>">
-                    <%= element.name[0].toUpperCase() + element.name.slice(1) %>
-                </a>
-            </li>
-            <% }); %>
-    </ul>
+    <h1>At foo Restaurant</h1>
+    <h2>
+        Name: <%= food.name[0].toUpperCase() + food.name.slice(1) %>
+    </h2>
+    <img src="<%= food.image %>" alt="<%= food.name %>" />
+    <h3>
+        Price: <%= food.price %>
+    </h3>
+    <div class="main-page">
+        <a href="/foods">Back to Main Page</a>
+    </div>
 </body>
 
 </html>
